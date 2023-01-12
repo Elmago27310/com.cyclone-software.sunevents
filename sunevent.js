@@ -6,28 +6,28 @@ var tokens = [];
 var specialTokens = [];
 
 var sunsetSchedules = {
-    'solarNoon': { ename: 'Solar Noon', nlname: 'Hoogste zonnestand', p: true },
-    'nadir': { ename: 'Nadir', nlname: 'Donkerste moment van de nacht', p: true },
-    'sunrise': { ename: 'Sunrise', nlname: 'Zonsopgang', p: true },
-    'sunset': { ename: 'Sunset', nlname: 'Zonsondergang', p: true },
-    'sunriseEnd': { ename: 'Sunrise ends', nlname: 'Einde Zonsopgang', p: true },
-    'sunsetStart': { ename: 'Sunset starts', nlname: 'Begin Zonsondergang', p: true },
-    'dawn': { ename: 'Dawn', nlname: 'Ochtendschemering', p: true },
-    'dusk': { ename: 'Dusk', nlname: 'Avondschemering', p: true },
-    'nauticalDawn': { ename: 'Nautical dawn', nlname: 'Nautische schemering Ochtend', p: true },
-    'nauticalDusk': { ename: 'Nautical dusk', nlname: 'Nautische schemering Avond', p: true },
-    'nightEnd': { ename: 'Night ends', nlname: 'Einde Nacht', p: true },
-    'night': { ename: 'Night starts', nlname: 'Nacht begint', p: true },
-    'goldenHourEnd': { ename: 'Morning golden hour  ends', nlname: 'Einde Ochtend gouden uur', p: true },
-    'goldenHour': { ename: 'Evening golden hour starts', nlname: 'Begin avond gouden uur', p: true }
+    'solarNoon': { ename: 'Solar Noon', nlname: 'Hoogste zonnestand', fname:'Midi solaire', p: true },
+    'nadir': { ename: 'Nadir', nlname: 'Donkerste moment van de nacht', fname'Le moment le plus sombre de la nuit', p: true },
+    'sunrise': { ename: 'Sunrise', nlname: 'Zonsopgang', fname'Lever du soleil', p: true },
+    'sunset': { ename: 'Sunset', nlname: 'Zonsondergang', fname'Coucher de soleil', p: true },
+    'sunriseEnd': { ename: 'Sunrise ends', nlname: 'Einde Zonsopgang', fname'Fin du lever du soleil', p: true },
+    'sunsetStart': { ename: 'Sunset starts', nlname: 'Begin Zonsondergang', fname'Fin du coucher du soleil', p: true },
+    'dawn': { ename: 'Dawn', nlname: 'Ochtendschemering', fname'Aube', p: true },
+    'dusk': { ename: 'Dusk', nlname: 'Avondschemering', fname'Crépuscule', p: true },
+    'nauticalDawn': { ename: 'Nautical dawn', nlname: 'Nautische schemering Ochtend', fname'Aube nauticque', p: true },
+    'nauticalDusk': { ename: 'Nautical dusk', nlname: 'Nautische schemering Avond', fname 'Crépuscule nautique',  p: true },
+    'nightEnd': { ename: 'Night ends', nlname: 'Einde Nacht', fname'Fin de la nuit', p: true },
+    'night': { ename: 'Night starts', nlname: 'Nacht begint', fname'Début de la nuit', p: true },
+    'goldenHourEnd': { ename: 'Morning golden hour  ends', nlname: 'Einde Ochtend gouden uur', fname'Fin de l'heure dorée du matin',  p: true },
+    'goldenHour': { ename: 'Evening golden hour starts', nlname: 'Begin avond gouden uur', fname'Début de l'heure dorée du matin", p: true }
 }
 
 var specialVariables = {
-    'astronomicalDark': { ename: 'Astronomical Dark', nlname: 'Astronomisch Donker', type: 'boolean' },
-    'nauticalDark': { ename: 'Nautical Dark', nlname: 'Nautische Donker', type: 'boolean'},
-    'civilDark': { ename: 'Civil Dark', nlname: 'Schemering', type: 'boolean' },
-    'azimuth': { ename: 'Azimuth', nlname: 'Azimuth', type: 'number' },
-    'altitude' : { ename: 'Altitude', nlname: 'Hoogte', type: 'number' },
+    'astronomicalDark': { ename: 'Astronomical Dark', nlname: 'Astronomisch Donker', fname'Obscurité astronomique', type: 'boolean' },
+    'nauticalDark': { ename: 'Nautical Dark', nlname: 'Nautische Donker', fname'Obscurité nautique', type: 'boolean'},
+    'civilDark': { ename: 'Civil Dark', nlname: 'Schemering', fname'Obscurité civile', type: 'boolean' },
+    'azimuth': { ename: 'Azimuth', nlname: 'Azimuth', fname'Azimuth', type: 'number' },
+    'altitude' : { ename: 'Altitude', nlname: 'Hoogte', fname'Altitude', type: 'number' },
 }
 
 
