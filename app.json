@@ -2,11 +2,14 @@
     "id": "com.cyclone-software.sunevents",
     "name": {
         "en": "Sun Events",
-        "nl": "Zonnestanden"
+        "nl": "Zonnestanden",
+		"fr": "Événements solaires"
+		
     },
     "description": {
         "en": "Triggers you at certain positions of the sun.",
-        "nl": "Bij diverse zonnestanden kunt u triggers maken, u kunt ook uw eigen events defineren."
+        "nl": "Bij diverse zonnestanden kunt u triggers maken, u kunt ook uw eigen events defineren.",
+		"fr": "Il vous déclenche à certaines positions du soleil."
     },
     "category": "tools",
     "images": {
@@ -27,27 +30,31 @@
             "id": "sun_event",
             "title": {
                 "en": "Sun Events (offset in min)",
-                "nl": "Zonnestanden events (offset in min)"
+                "nl": "Zonnestanden events (offset in min)",
+				"fr": "Événements solaires (décalage en min)"
             },
             "tokens": [{
                     "name": "event",
                     "title": {
                         "en": "Event",
-                        "nl": "Event"
+                        "nl": "Event",
+						"fr": Evenement"
                     }
                 },
                 {
                     "name": "se_time",
                     "title": {
                         "en": "Time",
-                        "nl": "Tijd"
+                        "nl": "Tijd",
+						"fr": "Heure"
                     }
                 },
                 {
                     "name": "se_date",
                     "title": {
                         "en": "Date",
-                        "nl": "Datum"
+                        "nl": "Datum",
+						"fr": "Date"
                     }
                 }
             ],
@@ -56,7 +63,8 @@
                     "type": "autocomplete",
                     "placeholder": {
                         "en": "Event",
-                        "nl": "Event"
+                        "nl": "Event",
+						"fr": "Evenement"
                     }
                 },
                 {
@@ -84,7 +92,8 @@
                     "type": "autocomplete",
                     "placeholder": {
                         "en": "Event",
-                        "nl": "Event"
+                        "nl": "Event",
+						"fr": "Evenement"
                     }
                 },
                 {
@@ -105,6 +114,7 @@
             "title": {
                 "en": "It !{{is|isn't}} after ",
                 "nl": "Het !{{is|is niet}} na "
+				"fr": "{{C'est|Ce n'est pas}}"
             },
             "args": [{
                     "name": "event",
